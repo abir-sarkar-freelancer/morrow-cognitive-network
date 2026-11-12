@@ -1,0 +1,44 @@
+
+name: Publish MORROW Astro Source
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Extract MORROW source
+        run: |
+          tar -xzf morrow-upload.tar.gz
+
+          test -d morrow-site
+          test -f morrow-site/package.json
+
+          cp -a morrow-site/. .
+          rm -rf morrow-site
+          rm -f morrow-upload.tar.gz
+
+      - name: Commit Astro source
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "chore: publish MORROW Astro source"
+          git push origin HEAD:main
