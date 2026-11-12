@@ -200,16 +200,16 @@ const structuredData = {
             <p class="console-description" id="connection-description">Register MORROW as a remote MCP server in an enterprise agent host. Subscribe to specific Faculty tool scopes; computation is metered per invocation in PULSE. Your organisation can also publish eligible workloads to the Exchange.</p>
             <div class="config-window">
               <div class="config-window-top"><span><i></i><i></i><i></i></span><small id="config-filename">mcp.remote.json</small><button type="button" class="copy-button" data-copy-target="enterprise-config">COPY CONFIG ↗</button></div>
-              <pre><code id="enterprise-config">{
-  "mcpServers": {
-    "morrow-brain": {
+              <pre><code id="enterprise-config">&#123;
+  "mcpServers": &#123;
+    "morrow-brain": &#123;
       "url": "https://mcp.morrow.example/brain",
-      "headers": {
-        "Authorization": "Bearer ${MORROW_TOKEN}"
-      }
-    }
-  }
-}</code></pre>
+      "headers": &#123;
+        "Authorization": "Bearer $&#123;MORROW_TOKEN&#125;"
+      &#125;
+    &#125;
+  &#125;
+&#125;</code></pre>
             </div>
             <div class="console-actions"><button class="button button-dark" type="button" data-connect="enterprise">Connect enterprise host <span aria-hidden="true">↗</span></button><span class="config-hint" id="config-hint">Illustrative configuration · no network request is made</span></div>
           </div>
