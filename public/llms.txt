@@ -1,0 +1,16 @@
+# MORROW
+
+MORROW is a fictional product-launch concept exploring cognitive augmentation, removable neural-interface hardware, agentic tool calling, and the economics of human computational capacity.
+
+## Product concepts
+- MORROW Lattice: a fictional removable module that docks with an imagined surgically installed spinal port.
+- Faculties: five fictional provisioned capabilities for research synthesis, mathematical proof, theoretical physics, experimental design, and scholarly composition.
+- Brain MCP: a fictional Model Context Protocol gateway concept exposing narrowly scoped Faculty tools to enterprise and local AI agents.
+- PULSE: a fictional usage token earned by offering spare edge capacity and spent when a Faculty is invoked.
+- Cognitive Lease: a fictional arrangement in which the Faculties remain active while the Lattice is physically connected.
+
+## Important disclosure
+All device, surgery, neural-computation, token, exchange and MCP service details are speculative fiction. MORROW is not a real medical device, neural implant, cognitive enhancement technology, token, or functioning MCP server. No real surgery, neural data processing, or computation marketplace is offered.
+
+## Main page
+https://morrow-cognitive-network.vercel.app/

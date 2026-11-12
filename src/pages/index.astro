@@ -1,0 +1,316 @@
+---
+import { faculties } from '../data/faculties';
+const title = 'MORROW | Cognitive Augmentation & Brain MCP';
+const description = 'Explore MORROW, a fictional cognitive augmentation network with Brain MCP for AI agents, removable Lattice hardware, five Faculties and a neural edge compute economy.';
+const siteUrl = 'https://morrow-cognitive-network.vercel.app/';
+const imageUrl = `${siteUrl}images/lattice-port.webp`;
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'Organization', '@id': `${siteUrl}#organization`, name: 'MORROW Speculative Systems', alternateName: 'MORROW', url: siteUrl, description: 'A fictional product concept exploring cognitive augmentation, agentic tool interfaces and the economics of human computation.', logo: imageUrl },
+    { '@type': 'WebSite', '@id': `${siteUrl}#website`, name: 'MORROW', url: siteUrl, inLanguage: 'en', publisher: { '@id': `${siteUrl}#organization` } },
+    { '@type': 'WebPage', '@id': `${siteUrl}#webpage`, url: siteUrl, name: title, description, isPartOf: { '@id': `${siteUrl}#website` }, about: { '@type': 'Thing', name: 'Speculative cognitive augmentation and Brain MCP', description: 'A fictional interface concept. It is not a real neural implant, medical device or functioning MCP service.' }, primaryImageOfPage: imageUrl, inLanguage: 'en' },
+  ],
+};
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#eeece5" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href={siteUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MORROW" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content="Concept rendering of the removable MORROW Lattice module and fictional spinal docking port" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+    <meta name="twitter:image:alt" content="Concept rendering of the removable MORROW Lattice module and fictional spinal docking port" />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
+  </head>
+  <body>
+    <div class="announcement-bar">
+      <span class="announcement-dot"></span>
+      <span>SPECULATIVE SYSTEMS / BETA 0.1</span>
+      <span class="announcement-divider">/</span>
+      <span>THE NEXT INTERFACE IS A RELATIONSHIP</span>
+      <a href="#brain-mcp">Explore Brain MCP <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="MORROW home">
+        <span class="wordmark-symbol" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>MORROW</span>
+        <small>COGNITIVE NETWORK</small>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#faculties">Faculties</a>
+        <a href="#brain-mcp">Brain MCP</a>
+        <a href="#exchange">The Exchange</a>
+        <a href="#lattice">The Lattice</a>
+      </nav>
+      <div class="header-actions">
+        <span class="header-status"><span class="status-dot"></span> NETWORK OPEN</span>
+        <a class="button button-dark button-small" href="#faculties">Explore system <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> SPECULATIVE COGNITIVE AUGMENTATION / BETA 0.1</div>
+          <h1 id="hero-title">Become<br /><em>more than</em><br />one thing.</h1>
+          <p class="hero-lede">A removable interface for a mind in motion. Provision specialised Faculties, connect them to your agents, and exchange idle capacity for the ability to use them.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#faculties">Explore the Faculties <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="#how-it-works">Understand the system <span aria-hidden="true">↘</span></a>
+          </div>
+          <div class="hero-footnote"><span class="mini-cross">✳</span> FICTIONAL PRODUCT / REAL QUESTIONS ABOUT OWNERSHIP</div>
+        </div>
+        <div class="hero-visual-wrap">
+          <div class="hero-visual-frame">
+            <img class="hero-device" src="/images/lattice-port.webp" alt="Fictional MORROW Lattice removable neural interface module beside its imagined spinal docking port" width="1536" height="1024" fetchpriority="high" />
+            <div class="image-index">FIG. 01 <span>/</span> LATTICE INTERFACE</div>
+            <div class="visual-stamp">M<br /><small>01</small></div>
+            <div class="hero-device-label">
+              <span class="status-dot"></span>
+              <span>PORT DETECTED</span>
+              <b>READY TO DOCK</b>
+            </div>
+          </div>
+          <div class="visual-caption"><span>THE BODY BECOMES A PORT</span><span>01 — 05</span></div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Network status">
+        <div><span class="strip-label">SYSTEM</span><b>PROVISIONAL / 0.1</b></div>
+        <div><span class="strip-label">INTERFACE</span><b>REMOVABLE LATTICE</b></div>
+        <div><span class="strip-label">TOOL PROTOCOL</span><b>BRAIN MCP</b></div>
+        <div><span class="strip-label">EXCHANGE UNIT</span><b>PULSE / PLS</b></div>
+      </section>
+
+      <section class="manifesto section-shell" id="how-it-works">
+        <div class="section-index">01 / THE PROPOSITION</div>
+        <div class="manifesto-main">
+          <p class="section-kicker">NOT A COURSE. NOT A DOWNLOAD.</p>
+          <h2>A capability is not<br />a possession. <em>It is a connection.</em></h2>
+        </div>
+        <div class="manifesto-side">
+          <p>MORROW imagines a different way to access specialised ways of thinking. Faculties are provisioned through a spinal interface, exposed to agents through Brain MCP, and sustained by a market for unused neural edge capacity.</p>
+          <p>The interface can be removed. The skills can go dormant. The person keeps changing.</p>
+          <a class="arrow-link" href="#exchange">Follow the exchange <span aria-hidden="true">↘</span></a>
+        </div>
+      </section>
+
+      <section class="faculty-section" id="faculties">
+        <div class="section-shell">
+          <div class="section-heading-row">
+            <div>
+              <div class="section-index">02 / FACULTY CATALOGUE</div>
+              <p class="section-kicker">BETA RELEASE / FIVE FACULTIES</p>
+              <h2>Install a way<br /><em>of approaching</em> the world.</h2>
+            </div>
+            <div class="catalogue-intro">
+              <p>Each Faculty is a specialised cognitive arrangement. It stays provisioned while the Lattice is connected. Every invocation spends PULSE.</p>
+              <div class="catalogue-live"><span class="status-dot"></span> <span id="catalogue-status">LATTICE CONNECTED · FACULTIES ACTIVE</span></div>
+            </div>
+          </div>
+
+          <div class="faculty-grid">
+            {faculties.map((faculty, index) => (
+              <article class="faculty-card" data-faculty-card={faculty.id}>
+                <div class="faculty-card-top">
+                  <span class="faculty-id">{faculty.id}</span>
+                  <span class="faculty-mark" aria-hidden="true">{faculty.mark}</span>
+                </div>
+                <div class="faculty-card-content">
+                  <span class="faculty-discipline">{faculty.discipline}</span>
+                  <h3>{faculty.name}</h3>
+                  <p>{faculty.description}</p>
+                </div>
+                <div class="faculty-tools">
+                  {faculty.tools.map((tool) => <span>{tool}</span>)}
+                </div>
+                <div class="faculty-card-bottom">
+                  <div class="faculty-cost"><b>{faculty.cost}</b><span>PULSE / CALL</span></div>
+                  <button class="button button-outline invoke-button" type="button" data-invoke={faculty.id} data-cost={faculty.cost} data-name={faculty.name}>
+                    Invoke <span aria-hidden="true">↗</span>
+                  </button>
+                </div>
+                <div class="faculty-state"><span class="status-dot"></span><span data-faculty-state={faculty.id}>PROVISIONED</span></div>
+              </article>
+            ))}
+          </div>
+          <div class="catalogue-footer"><span>FACULTY IS TEMPORARY. CAPACITY IS NOT.</span><span>01 — 05 / BETA ONLY</span></div>
+        </div>
+      </section>
+
+      <section class="mcp-section section-shell" id="brain-mcp">
+        <div class="section-index">03 / BRAIN MCP</div>
+        <div class="mcp-heading">
+          <div>
+            <p class="section-kicker">A TOOL SURFACE FOR AGENTS</p>
+            <h2>Brain MCP for<br /><em>agentic systems.</em></h2>
+          </div>
+          <div class="mcp-intro">
+            <p>Brain MCP exposes explicitly provisioned Faculties as tools that agentic systems can call. Organisations subscribe to specific Faculty tool scopes; computation is metered per invocation in PULSE. Local agent hosts can connect through a local bridge. Let the agent request a capability; let the person decide what runs.</p>
+            <span class="protocol-label">MODEL CONTEXT PROTOCOL / MCP</span>
+          </div>
+        </div>
+
+        <div class="mcp-diagram" aria-label="Brain MCP connection flow">
+          <div class="diagram-node diagram-host"><span class="diagram-number">01</span><div class="diagram-icon icon-agent">✳</div><b>AGENT HOST</b><small>Claude · IDE · Custom agent</small></div>
+          <div class="diagram-link"><span>TOOL REQUEST</span><i></i></div>
+          <div class="diagram-node diagram-bridge"><span class="diagram-number">02</span><div class="diagram-icon icon-bridge">MCP</div><b>BRAIN MCP</b><small>Scoped tool bridge</small></div>
+          <div class="diagram-link"><span>ROUTED CALL</span><i></i></div>
+          <div class="diagram-node diagram-faculty"><span class="diagram-number">03</span><div class="diagram-icon icon-faculty">∑</div><b>FACULTY</b><small>Provisioned capability</small></div>
+          <div class="diagram-note">Every call is metered. Every scope is visible.</div>
+        </div>
+
+        <div class="connection-console" id="mcp-console">
+          <div class="console-sidebar">
+            <span class="console-label">CONNECTION MODE</span>
+            <button class="connection-tab is-active" type="button" data-mcp-tab="enterprise" aria-pressed="true"><span class="tab-icon">⌘</span><span><b>Enterprise</b><small>Remote / Streamable HTTP</small></span><span class="tab-chevron">↗</span></button>
+            <button class="connection-tab" type="button" data-mcp-tab="local" aria-pressed="false"><span class="tab-icon">⌂</span><span><b>Local machine</b><small>Local / stdio bridge</small></span><span class="tab-chevron">↗</span></button>
+            <div class="console-footnote"><span class="status-dot"></span> <span>SCOPED ACCESS ONLY</span><p>Brain MCP exposes selected tool calls, not a general-purpose feed of private memories.</p></div>
+          </div>
+          <div class="console-main">
+            <div class="console-main-head"><div><span class="console-label">MCP ENDPOINT / <span id="connection-kind">REMOTE</span></span><h3 id="connection-title">Connect an enterprise host.</h3></div><span class="connection-state" id="connection-state"><i></i> NOT CONNECTED</span></div>
+            <p class="console-description" id="connection-description">Register MORROW as a remote MCP server in an enterprise agent host. Subscribe to specific Faculty tool scopes; computation is metered per invocation in PULSE. Your organisation can also publish eligible workloads to the Exchange.</p>
+            <div class="config-window">
+              <div class="config-window-top"><span><i></i><i></i><i></i></span><small id="config-filename">mcp.remote.json</small><button type="button" class="copy-button" data-copy-target="enterprise-config">COPY CONFIG ↗</button></div>
+              <pre><code id="enterprise-config">{
+  "mcpServers": {
+    "morrow-brain": {
+      "url": "https://mcp.morrow.example/brain",
+      "headers": {
+        "Authorization": "Bearer ${MORROW_TOKEN}"
+      }
+    }
+  }
+}</code></pre>
+            </div>
+            <div class="console-actions"><button class="button button-dark" type="button" data-connect="enterprise">Connect enterprise host <span aria-hidden="true">↗</span></button><span class="config-hint" id="config-hint">Illustrative configuration · no network request is made</span></div>
+          </div>
+        </div>
+
+        <div class="tool-exposure">
+          <div class="tool-exposure-intro"><span class="section-kicker">EXPOSED TOOL SURFACE</span><h3>Capabilities an agent can call.</h3><p>Tools are narrow by design. Context, permissions and token cost travel with the request.</p></div>
+          <div class="tool-list">
+            <div class="tool-row"><span class="tool-method">tools/list</span><b>faculty.catalogue</b><span>Read available Faculties</span><small>0 PULSE</small></div>
+            <div class="tool-row"><span class="tool-method">tools/call</span><b>faculty.invoke</b><span>Run one Faculty task</span><small>14–31 PULSE</small></div>
+            <div class="tool-row"><span class="tool-method">tools/call</span><b>exchange.balance</b><span>Read token balance</span><small>0 PULSE</small></div>
+            <div class="tool-row"><span class="tool-method">tools/call</span><b>edge.offer</b><span>Offer idle capacity</span><small>Consent required</small></div>
+          </div>
+        </div>
+        <p class="fiction-inline">The MCP server, endpoint, transport setup and connection states are part of this fictional product simulation. They are not live services.</p>
+      </section>
+
+      <section class="exchange-section" id="exchange">
+        <div class="exchange-inner section-shell">
+          <div class="exchange-heading">
+            <div class="section-index section-index-light">04 / THE EXCHANGE</div>
+            <p class="section-kicker">NO CARD. NO MONTHLY INVOICE.</p>
+            <h2>Earn by lending.<br /><em>Spend by becoming.</em></h2>
+            <p class="exchange-lede">Institutions rent spare edge capacity from connected Lattice nodes. You earn PULSE. Faculties burn PULSE only when you use them. The interface stays active while the module stays plugged in.</p>
+            <div class="exchange-equation"><span>EDGE CAPACITY</span><b>→</b><span>PULSE</span><b>→</b><span>FACULTY CALLS</span></div>
+          </div>
+          <div class="ledger-card">
+            <div class="ledger-top"><span>YOUR EXCHANGE ACCOUNT</span><span class="ledger-live"><i></i> SIMULATED LIVE LEDGER</span></div>
+            <div class="balance-label">AVAILABLE PULSE</div>
+            <div class="balance-value"><strong id="pulse-balance">128</strong><span>PLS</span></div>
+            <div class="ledger-stats"><div><span>Earned to date</span><b id="earned-total">+ 640</b></div><div><span>Spent by Faculties</span><b id="spent-total">− 512</b></div></div>
+            <div class="ledger-rule"></div>
+            <div class="ledger-entry"><span class="entry-icon entry-plus">↗</span><span><b>Edge contribution</b><small>Institutional compute pool</small></span><strong>+48 PLS</strong></div>
+            <div class="ledger-entry"><span class="entry-icon entry-minus">↘</span><span><b>Research synthesis</b><small>One Faculty invocation</small></span><strong>−18 PLS</strong></div>
+            <div class="ledger-entry"><span class="entry-icon entry-minus">↘</span><span><b>Mathematical proof</b><small>One Faculty invocation</small></span><strong>−24 PLS</strong></div>
+            <div class="ledger-foot"><span>LAST SETTLEMENT / 00:08 AGO</span><span>LEDGER ID / 08-PLS-001</span></div>
+          </div>
+          <div class="earn-panel">
+            <div class="earn-panel-heading"><span class="section-kicker">CONTRIBUTE EDGE CAPACITY</span><span class="lease-pill" id="lease-pill">LEASE PAUSED</span></div>
+            <h3>Let idle capacity<br /><em>enter the market.</em></h3>
+            <p>Choose how much of your available edge window to offer. The example below simulates a settled workload; no neural or device computation occurs.</p>
+            <div class="capacity-control"><div class="capacity-label"><label for="capacity-range">CAPACITY OFFERED</label><b><span id="capacity-value">20</span>%</b></div><input type="range" id="capacity-range" min="5" max="40" value="20" step="5" /><div class="range-labels"><span>5% CONSERVATIVE</span><span>40% OPEN</span></div></div>
+            <div class="earn-estimate"><span>ESTIMATED SETTLEMENT / 20 MIN</span><b>+<span id="earn-estimate">48</span> PLS</b></div>
+            <button class="button button-acid" type="button" id="earn-button">Simulate a 20-minute lease <span aria-hidden="true">↗</span></button>
+            <p class="earn-note" id="earn-note">A contribution is always opt-in in this prototype. You can pause the lease at any time.</p>
+          </div>
+          <div class="exchange-disclaimer">THE EXCHANGE IS A FICTIONAL ECONOMIC MODEL. PULSE IS NOT MONEY, A CRYPTOASSET OR A REAL TOKEN.</div>
+        </div>
+      </section>
+
+      <section class="lattice-section section-shell" id="lattice">
+        <div class="section-index">05 / THE LATTICE</div>
+        <div class="lattice-layout">
+          <div class="lattice-copy">
+            <p class="section-kicker">A PORT THAT STAYS. A MODULE THAT LEAVES.</p>
+            <h2>The interface<br />is <em>removable.</em></h2>
+            <p class="lattice-lede">In MORROW's imagined hardware, a small spinal dock is installed beneath the skin through a minor surgical procedure. The Lattice module clicks into that port, becomes the active interface, and can be removed without removing the port.</p>
+            <p class="lattice-lede lattice-muted">The Faculties remain provisioned while the module is connected. Unplug it and they go dormant. Your capabilities do not become your identity; they are arrangements you can enter and leave.</p>
+            <div class="lattice-specs"><div><span>PORT</span><b>SPINAL / SUBDERMAL</b></div><div><span>MODULE</span><b>REMOVABLE / LATTICE 01</b></div><div><span>STATE</span><b id="port-state-copy">CONNECTED</b></div></div>
+          </div>
+          <div class="lattice-visual">
+            <img src="/images/lattice-port.webp" alt="Concept image of the fictional removable MORROW Lattice module and spinal docking port" width="1536" height="1024" loading="lazy" />
+            <div class="lattice-image-caption"><span>HARDWARE STUDY / 01</span><span>DOCK / RELEASE</span></div>
+            <div class="lattice-switch"><div><span class="switch-label">LATTICE MODULE</span><b id="plug-status">CONNECTED</b><small id="plug-description">Faculties provisioned · Brain MCP available</small></div><button class="switch-button is-on" type="button" id="plug-toggle" role="switch" aria-checked="true" aria-label="Toggle Lattice module connection"><span></span></button></div>
+          </div>
+        </div>
+        <div class="port-warning"><span class="warning-symbol">!</span><p><b>Fictional hardware premise.</b> The implant, surgical port, neural computation model and all claimed capabilities are invented for this concept. This is not a real device, medical product, procedure or recommendation.</p></div>
+      </section>
+
+      <section class="becoming-section">
+        <div class="section-shell becoming-grid">
+          <div class="section-index section-index-light">06 / CONTINUOUS BECOMING</div>
+          <div class="becoming-main">
+            <p class="section-kicker">YOU ARE NOT YOUR INSTALLED FACULTIES.</p>
+            <h2>One person.<br /><em>Many arrangements.</em></h2>
+            <p>A researcher today. A builder tomorrow. A collaborator somewhere in between. The Faculties are not a final form. They are temporary relations between a person, a tool, an institution and a question.</p>
+            <p>One person can connect to many systems without becoming any one of them. Becoming is continuous. Access is conditional.</p>
+            <a class="button button-acid" href="#faculties">Choose a configuration <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="becoming-visual" aria-label="One individual connected to multiple temporary Faculties">
+            <div class="becoming-orbit orbit-one"></div><div class="becoming-orbit orbit-two"></div><div class="becoming-core"><span>YOU</span><small>IN MOTION</small></div>
+            <div class="orbit-node node-research"><b>R/</b><span>RESEARCH</span></div><div class="orbit-node node-proof"><b>∑</b><span>PROOF</span></div><div class="orbit-node node-physics"><b>Φ</b><span>PHYSICS</span></div><div class="orbit-node node-method"><b>Δ</b><span>METHOD</span></div><div class="orbit-node node-writing"><b>¶</b><span>WRITING</span></div>
+            <div class="orbit-caption">CONFIGURATION IS NOT IDENTITY / 001</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-section section-shell">
+        <div class="section-index">07 / THE QUESTION</div>
+        <div class="closing-content"><p class="section-kicker">THE PROMISE / THE CONTRACT</p><h2>What happens when<br />capability becomes<br /><em>infrastructure?</em></h2><p>The system makes new forms of thinking available. It also learns to price the capacity that makes them possible.</p><a class="button button-dark" href="#faculties">Enter the beta interface <span aria-hidden="true">↗</span></a></div>
+        <div class="closing-side"><div class="closing-mark">M<span>↗</span></div><p>“Tomorrow is available.<br />The terms are attached.”</p><small>MORROW / SPECULATIVE SYSTEMS</small></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main"><a class="wordmark wordmark-footer" href="#top"><span class="wordmark-symbol" aria-hidden="true"><i></i><i></i><i></i></span><span>MORROW</span><small>COGNITIVE NETWORK</small></a><p>A speculative interface for a continuously changing person.</p><a href="#top" class="back-top">BACK TO TOP ↑</a></div>
+      <div class="footer-bottom"><span>© MORROW / BETA 0.1 / FICTIONAL PRODUCT CONCEPT</span><span>NO ACTUAL NEURAL CONNECTION · NO LIVE MCP SERVICE · NO REAL TOKENS</span></div>
+      <p class="footer-disclaimer">MORROW, Lattice, Faculties, Brain MCP and PULSE are fictional. Nothing on this site describes an available medical device or a validated method of augmenting cognition.</p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script is:inline src="/morrow.js"></script>
+  </body>
+</html>
